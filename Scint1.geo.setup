@@ -1,0 +1,8 @@
+Volume Scint1Detector
+Scint1Detector.Shape BRIK 4.9 1.725 4.9
+Scint1Detector.Material CsI
+Scint1Detector.Position -23.875249 0.491681 90.761803
+Scint1Detector.Rotation 43.17 0.0 -2.88
+Scint1Detector.Visibility 1
+Scint1Detector.Color 95
+Scint1Detector.Mother CADWrapper

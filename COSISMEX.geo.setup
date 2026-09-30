@@ -31,3 +31,41 @@ ShieldedTelescope.Mother WorldVolume
 ShieldedTelescope.Rotation 0.0 0.0 0.0
 ShieldedTelescope.Position 0 0 0
 
+
+#Polarization structure
+
+Volume CADWrapper
+CADWrapper.Shape BRIK 1000 1000 1000
+CADWrapper.Material vacuum
+CADWrapper.Visibility 0
+CADWrapper.Position 0 0 -19.5225
+CADWrapper.Rotation 0 0 0
+CADWrapper.Virtual True
+CADWrapper.Mother WorldVolume
+
+#Include PolStandR.300.geo.setup
+#Include Csl1SupportBracket.100.geo.setup
+#Include CsI2Bar.100.geo.setup
+#Include Csl2SupportBracket.100.geo.setup
+#Include CsI3Crossbar.100.geo.setup
+#Include Csl3Bar.100.geo.setup
+#Include Csl3SupportBracket.100.geo.setup
+
+#Include Csl1SupportBracket.100.geo.setup
+Include Scint1.geo.setup
+Include Scint2.geo.setup
+Include Scint3.geo.setup
+
+Include Scintillators.det
+
+Include Leadbrick.100.geo.setup
+
+#Volume Radsourcepos
+#Radsourcepos.Shape BRIK 2 2 2
+#Radsourcepos.Material aluminum
+#Radsourcepos.Position -45.221 -50.21 76.99
+#Radsourcepos.Rotation 0 0 0
+#Radsourcepos.Visibility 1
+#Radsourcepos.Color 2
+#Radsourcepos.Mother WorldVolume
+

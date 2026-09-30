@@ -70,19 +70,5 @@ GuardRingDetector_GeD_10.EnergyResolution Gaus 5000    5000      3.3
 
 
 
-#------------------------------------------------------------
-# Trigger information:
-
-Trigger Trigger_GeD_10
-Trigger_GeD_10.Detector GeD_10 1
-Trigger_GeD_10.TriggerByChannel true
-Trigger_GeD_10.Veto false
-
-
-Trigger GuardRingVeto_GeD_10
-GuardRingVeto_GeD_10.Veto true
-GuardRingVeto_GeD_10.TriggerByChannel true
-GuardRingVeto_GeD_10.Detector GuardRingDetector_GeD_10 1
-
 
 

@@ -490,3 +490,7 @@ Silicon.Component Si 1
 Material Nickel
 Nickel.Density 8.9
 Nickel.Component Ni 1
+
+Material Pb
+Pb.Density               11.35
+Pb.Component             Pb  1 
