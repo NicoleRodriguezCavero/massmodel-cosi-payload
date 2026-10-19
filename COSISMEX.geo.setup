@@ -56,7 +56,7 @@ Include Scint1.geo.setup
 Include Scint2.geo.setup
 Include Scint3.geo.setup
 
-Include Scintillators.det
+#Include Scintillators.det
 
 Include Leadbrick.100.geo.setup
 
