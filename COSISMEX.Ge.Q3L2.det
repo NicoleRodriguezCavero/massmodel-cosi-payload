@@ -20,7 +20,7 @@ GeD_14.EnergyResolution   Gauss    662.0    662.0  1.68
 GeD_14.EnergyResolution   Gauss   1275.0   1275.0  1.79
 GeD_14.EnergyResolution   Gauss   1836.0   1836.0  1.86
 
-GeD_14.Overflow 1800
+#GeD_14.Overflow 1800
 
 # Both
 GeD_14.DepthResolutionThreshold 20.0
