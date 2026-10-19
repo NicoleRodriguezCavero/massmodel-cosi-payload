@@ -67,3 +67,22 @@ GuardRingDetector_GeD_2.EnergyResolution Gaus 500     500       3.3
 GuardRingDetector_GeD_2.EnergyResolution Gaus 1000    1000      3.3
 GuardRingDetector_GeD_2.EnergyResolution Gaus 2000    2000      3.3
 GuardRingDetector_GeD_2.EnergyResolution Gaus 5000    5000      3.3
+
+
+
+#------------------------------------------------------------
+# Trigger information:
+
+Trigger Trigger_GeD_2
+Trigger_GeD_2.Detector GeD_2 1
+Trigger_GeD_2.TriggerByChannel true
+Trigger_GeD_2.Veto false
+
+
+Trigger GuardRingVeto_GeD_2
+GuardRingVeto_GeD_2.Veto true
+GuardRingVeto_GeD_2.TriggerByChannel true
+GuardRingVeto_GeD_2.Detector GuardRingDetector_GeD_2 1
+
+
+

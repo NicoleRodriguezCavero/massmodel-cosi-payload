@@ -70,3 +70,19 @@ GuardRingDetector_GeD_12.EnergyResolution Gaus 5000    5000      3.3
 
 
 
+#------------------------------------------------------------
+# Trigger information:
+
+Trigger Trigger_GeD_12
+Trigger_GeD_12.Detector GeD_12 1
+Trigger_GeD_12.TriggerByChannel true
+Trigger_GeD_12.Veto false
+
+
+Trigger GuardRingVeto_GeD_12
+GuardRingVeto_GeD_12.Veto true
+GuardRingVeto_GeD_12.TriggerByChannel true
+GuardRingVeto_GeD_12.Detector GuardRingDetector_GeD_12 1
+
+
+

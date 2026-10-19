@@ -69,3 +69,20 @@ GuardRingDetector_GeD_8.EnergyResolution Gaus 2000    2000      3.3
 GuardRingDetector_GeD_8.EnergyResolution Gaus 5000    5000      3.3
 
 
+
+#------------------------------------------------------------
+# Trigger information:
+
+Trigger Trigger_GeD_8
+Trigger_GeD_8.Detector GeD_8 1
+Trigger_GeD_8.TriggerByChannel true
+Trigger_GeD_8.Veto false
+
+
+Trigger GuardRingVeto_GeD_8
+GuardRingVeto_GeD_8.Veto true
+GuardRingVeto_GeD_8.TriggerByChannel true
+GuardRingVeto_GeD_8.Detector GuardRingDetector_GeD_8 1
+
+
+
