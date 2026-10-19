@@ -28,7 +28,8 @@ CsI_3.NoiseThresholdEqualsTriggerThreshold true
 #------------------------------------------------------------
 
 TriggerMap Polarization
-Polarization.Map PolarizationTriggers.trig
+#Polarization.Map PolarizationTriggers.trig
+Polarization.Map PolarizationTriggers_noACSveto.trig
 
 #Trigger CsI_1_Veto
 #CsI_1_Veto.Veto false
