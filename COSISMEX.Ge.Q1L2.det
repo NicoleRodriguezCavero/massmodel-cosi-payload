@@ -37,7 +37,7 @@ GeD_6.DepthResolution   1836.0  { 0.05 / 2.35 }
 
 
 # ASIC
-GeD_6.TriggerThreshold     18
+GeD_6.TriggerThreshold     0
 GeD_6.NoiseThresholdEqualsTriggerThreshold  True
 
 
@@ -55,7 +55,7 @@ Simple GuardRingDetector_GeD_6
 GuardRingDetector_GeD_6.SensitiveVolume     GeWaferGuardRing_Q1_L2
 GuardRingDetector_GeD_6.DetectorVolume      GeWaferGuardRing_Q1_L2
 
-GuardRingDetector_GeD_6.TriggerThreshold      30
+GuardRingDetector_GeD_6.TriggerThreshold      0
 GuardRingDetector_GeD_6.NoiseThresholdEqualsTriggerThreshold true
 
 GuardRingDetector_GeD_6.EnergyResolution Gaus 10      10        3.3
@@ -67,22 +67,3 @@ GuardRingDetector_GeD_6.EnergyResolution Gaus 500     500       3.3
 GuardRingDetector_GeD_6.EnergyResolution Gaus 1000    1000      3.3
 GuardRingDetector_GeD_6.EnergyResolution Gaus 2000    2000      3.3
 GuardRingDetector_GeD_6.EnergyResolution Gaus 5000    5000      3.3
-
-
-
-#------------------------------------------------------------
-# Trigger information:
-
-Trigger Trigger_GeD_6
-Trigger_GeD_6.Detector GeD_6 1
-Trigger_GeD_6.TriggerByChannel true
-Trigger_GeD_6.Veto false
-
-
-Trigger GuardRingVeto_GeD_6
-GuardRingVeto_GeD_6.Veto true
-GuardRingVeto_GeD_6.TriggerByChannel true
-GuardRingVeto_GeD_6.Detector GuardRingDetector_GeD_6 1
-
-
-

@@ -37,7 +37,7 @@ GeD_12.DepthResolution   1836.0  { 0.05 / 2.35 }
 
 
 # ASIC
-GeD_12.TriggerThreshold     18
+GeD_12.TriggerThreshold     0
 GeD_12.NoiseThresholdEqualsTriggerThreshold  True
 
 
@@ -55,7 +55,7 @@ Simple GuardRingDetector_GeD_12
 GuardRingDetector_GeD_12.SensitiveVolume     GeWaferGuardRing_Q3_L0
 GuardRingDetector_GeD_12.DetectorVolume      GeWaferGuardRing_Q3_L0
 
-GuardRingDetector_GeD_12.TriggerThreshold      30
+GuardRingDetector_GeD_12.TriggerThreshold      0
 GuardRingDetector_GeD_12.NoiseThresholdEqualsTriggerThreshold true
 
 GuardRingDetector_GeD_12.EnergyResolution Gaus 10      10        3.3
@@ -67,22 +67,3 @@ GuardRingDetector_GeD_12.EnergyResolution Gaus 500     500       3.3
 GuardRingDetector_GeD_12.EnergyResolution Gaus 1000    1000      3.3
 GuardRingDetector_GeD_12.EnergyResolution Gaus 2000    2000      3.3
 GuardRingDetector_GeD_12.EnergyResolution Gaus 5000    5000      3.3
-
-
-
-#------------------------------------------------------------
-# Trigger information:
-
-Trigger Trigger_GeD_12
-Trigger_GeD_12.Detector GeD_12 1
-Trigger_GeD_12.TriggerByChannel true
-Trigger_GeD_12.Veto false
-
-
-Trigger GuardRingVeto_GeD_12
-GuardRingVeto_GeD_12.Veto true
-GuardRingVeto_GeD_12.TriggerByChannel true
-GuardRingVeto_GeD_12.Detector GuardRingDetector_GeD_12 1
-
-
-
