@@ -20,6 +20,7 @@ GeD_10.EnergyResolution   Gauss    662.0    662.0  1.68
 GeD_10.EnergyResolution   Gauss   1275.0   1275.0  1.79
 GeD_10.EnergyResolution   Gauss   1836.0   1836.0  1.86
 
+
 #GeD_10.Overflow 1800
 
 # Both
@@ -34,6 +35,7 @@ GeD_10.DepthResolution    122.0  { 0.06 / 2.35 }
 GeD_10.DepthResolution    356.0  { 0.05 / 2.35 }
 GeD_10.DepthResolution    662.0  { 0.05 / 2.35 }
 GeD_10.DepthResolution   1836.0  { 0.05 / 2.35 }
+
 
 
 # ASIC
@@ -67,3 +69,4 @@ GuardRingDetector_GeD_10.EnergyResolution Gaus 500     500       3.3
 GuardRingDetector_GeD_10.EnergyResolution Gaus 1000    1000      3.3
 GuardRingDetector_GeD_10.EnergyResolution Gaus 2000    2000      3.3
 GuardRingDetector_GeD_10.EnergyResolution Gaus 5000    5000      3.3
+

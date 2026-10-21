@@ -1,0 +1,48 @@
+# Global parameters
+Version                   1
+Geometry                  /Users/nicole/COSI/mass-models/massmodel-cosi-payload/COSISMEX.geo.setup
+
+# Physics list
+PhysicsListEM             LivermorePol
+DefaultRangeCut           0.0001
+DiscretizeHits            false
+
+# Output formats
+StoreSimulationInfo       all
+
+# Run & source parameters
+Run Na22_Nearfield
+Na22_Nearfield.FileName         Na22.EDR_1sec_180deg.pol
+Na22_Nearfield.Time             1
+
+# 1274.54 keV gamma without associated 511s
+Na22_Nearfield.Source High_Solo
+High_Solo.ParticleType    1
+High_Solo.Beam            DiskSource -45.0000000000 -50.0000000000 74.9775000000 -0.3549437991405241 -0.9348876400143984 1.2906779169328917e-16  0 0.159 0.5 0 360
+High_Solo.Spectrum        Mono 1274.54
+#High_Solo.Flux           0.0998*14555800
+High_Solo.Flux            1452668.84
+
+# 1274.54 keV gamma with two 511 keV annihilation photons
+Na22_Nearfield.Source High_multi
+High_multi.ParticleType   1
+High_multi.Beam           DiskSource -45.0000000000 -50.0000000000 74.9775000000 -0.3549437991405241 -0.9348876400143984 1.2906779169328917e-16  0 0.159 0.5 0 360
+High_multi.Spectrum       Mono 1274.54
+#High_multi.Flux          0.8996*14555800
+High_multi.Flux           13094397.68
+High_multi.Successor      Pos511A_multi
+
+# First 511 keV annihilation photon
+Na22_Nearfield.Source Pos511A_multi
+Pos511A_multi.ParticleType 1
+Pos511A_multi.Beam        DiskSource -45.0000000000 -50.0000000000 74.9775000000 -0.3549437991405241 -0.9348876400143984 1.2906779169328917e-16  0 0.159 0.5 0 360
+Pos511A_multi.Spectrum    Mono 511
+Pos511A_multi.IsSuccessor true
+Pos511A_multi.Successor   Pos511B_multi
+
+# Second 511 keV annihilation photon, back-to-back with first 511
+Na22_Nearfield.Source Pos511B_multi
+Pos511B_multi.ParticleType 1
+Pos511B_multi.Beam        ReverseDirectionToPredecessor
+Pos511B_multi.Spectrum    Mono 511
+Pos511B_multi.IsSuccessor true

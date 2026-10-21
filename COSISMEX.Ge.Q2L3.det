@@ -36,6 +36,7 @@ GeD_11.DepthResolution    662.0  { 0.05 / 2.35 }
 GeD_11.DepthResolution   1836.0  { 0.05 / 2.35 }
 
 
+
 # ASIC
 GeD_11.TriggerThreshold     0
 GeD_11.NoiseThresholdEqualsTriggerThreshold  True
@@ -67,3 +68,5 @@ GuardRingDetector_GeD_11.EnergyResolution Gaus 500     500       3.3
 GuardRingDetector_GeD_11.EnergyResolution Gaus 1000    1000      3.3
 GuardRingDetector_GeD_11.EnergyResolution Gaus 2000    2000      3.3
 GuardRingDetector_GeD_11.EnergyResolution Gaus 5000    5000      3.3
+
+

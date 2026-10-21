@@ -17,7 +17,7 @@ Include COSISMEX.16Ge.geo
 Include COSISMEX.16Ge.det
 Include COSISMEX.Cryostat.geo
 Include COSISMEX.ACS.geo
-Include COSISMEX.ACS.det
+#Include COSISMEX.ACS.det
 
 # Volume definitions:
 
@@ -59,11 +59,12 @@ Include Scint3.geo.setup
 #Include Scintillators.det
 
 Include Leadbrick.100.geo.setup
+#Include Leadbrick2.100.geo.setup
 
 #Volume Radsourcepos
 #Radsourcepos.Shape BRIK 2 2 2
 #Radsourcepos.Material aluminum
-#Radsourcepos.Position -45.221 -50.21 76.99
+#Radsourcepos.Position 45.221 50.21 76.99
 #Radsourcepos.Rotation 0 0 0
 #Radsourcepos.Visibility 1
 #Radsourcepos.Color 2

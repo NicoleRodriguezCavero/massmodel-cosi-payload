@@ -36,6 +36,7 @@ GeD_1.DepthResolution    662.0  { 0.05 / 2.35 }
 GeD_1.DepthResolution   1836.0  { 0.05 / 2.35 }
 
 
+
 # ASIC
 GeD_1.TriggerThreshold     0
 GeD_1.NoiseThresholdEqualsTriggerThreshold  True
